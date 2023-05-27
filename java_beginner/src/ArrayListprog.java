@@ -14,6 +14,7 @@ public class ArrayListprog {
             System.out.println("2.) Delete a given item from the list ");
             System.out.println("3.) Search if an item exists in the list ");
             System.out.println("4.) Print current list ");
+            System.out.println("5.) Clear the grocery list");
             System.out.println("Press any other number  to exit ");
             c = sc.nextInt();
             switch (c)
@@ -51,6 +52,10 @@ public class ArrayListprog {
                     for(String s3:grocery) {
                         System.out.println(s3);
                     }
+                    break;
+                case 5:
+                    System.out.println("Clearing the grocery list");
+                    grocery.clear();
                     break;
                 default :
                     System.out.println("You've chosen to exit the list program");
